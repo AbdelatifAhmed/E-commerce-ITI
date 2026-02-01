@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, hsl(353, 89%, 62%), #ff9fb3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 500px;
+    background: #f7f7fb;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid hsl(353, 89%, 62%);
+    border-radius: 0 50% 0 50%;
+    transition-duration: 0.7s;
+}
+
+.container:hover {
+    transform: translateY(20px);
+    border: 5px solid hsl(353, 89%, 62%);
+}
+
+.container h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(44, 43, 43);
+}

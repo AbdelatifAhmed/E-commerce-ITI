@@ -1,0 +1,161 @@
+:root {
+    --primary: #ff6f81;
+    --danger: #ef4444;
+    --bg: #f8fafc;
+    --text-dark: #0f172a;
+    --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background: var(--bg);
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0  20px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+}
+
+#wishlist-count {
+    font-size: 1rem;
+    background: var(--primary);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.wishlist-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.wishlist-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--primary);
+}
+
+.remove-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fff;
+    border: 1px solid #fee2e2;
+    color: var(--danger);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.remove-btn:hover {
+    background: var(--danger);
+    color: white;
+}
+
+.wishlist-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    height: 45px;
+    overflow: hidden;
+    color: var(--text-dark);
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin: 15px 0;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--text-dark);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background: var(--primary);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    background: var(--text-dark);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary:hover {
+    background: var(--primary);
+    transform: translateY(-3px);
+}
+
+.btn-primary i {
+    font-size: 20px;
+    margin: 0 5px 0;
+
+}

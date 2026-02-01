@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="form-toggle">
+            <button id="show-login" class="active"> Login</button>
+            <button id="show-register">Sign up</button>
+        </div>
+
+        <form id="login-form">
+            <h2>Welcome Back </h2>
+            <input type="email" id="login-email" placeholder="Email" required autofocus>
+            <input type="password" id="login-pass" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <form id="register-form" class="hidden">
+            <h2>Create New Account</h2>
+            <input type="text" id="reg-name" placeholder="Full Name" required autofocus>
+            <span id="reg-name-error" style="display: none;"></span>
+            <input type="email" id="reg-email" placeholder="Email Address" required>
+            <span id="reg-email-error" style="display: none;"></span>
+            <input type="password" id="reg-pass" placeholder="Password" required>
+            <span id="reg-password-error" style="display: none;"></span>
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+    <script>
+        const user = JSON.parse(localStorage.getItem("currentUser"));
+        if (user) {
+            window.location.href = "index.html";
+        }
+    </script>
+    <script src="JS/auth.js"></script>
+</body>
+</html>

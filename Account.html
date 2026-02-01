@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details - Anon</title>
+    <link rel="stylesheet" href="css/Account.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header class="account-page-header">
+        <div class="account-page-header-inner">
+            <a href="index.html" class="account-page-logo">
+                <img src="./images/logo/logo.svg" alt="Logo">
+            </a>
+            <a href="index.html" class="account-page-back">
+                <ion-icon name="arrow-back-outline"></ion-icon> Back to Shop
+            </a>
+        </div>
+    </header>
+
+    <main class="account-page-main">
+        <div class="account-page-card">
+            <figure class="img-container">
+                <img src="./images/user.jpg" alt="Avatar" width="100">
+            </figure>
+            <h1 class="account-page-title">Account Details</h1>
+
+            <div class="account-detail-row">
+                <span class="account-detail-label">Name</span>
+                <span class="account-detail-value" id="account-display-name">—</span>
+            </div>
+            <div class="account-detail-row">
+                <span class="account-detail-label">Email</span>
+                <span class="account-detail-value" id="account-display-email">—</span>
+            </div>
+
+            <hr class="account-divider">
+
+            <p class="account-section-label">Other details</p>
+            <div class="account-detail-row">
+                <span class="account-detail-label">Member since</span>
+                <span class="account-detail-value">January 2025</span>
+            </div>
+            <div class="account-detail-row">
+                <span class="account-detail-label">Default address</span>
+                <span class="account-detail-value">123 Main St, City, Country</span>
+            </div>
+            <div class="account-detail-row">
+                <span class="account-detail-label">Phone</span>
+                <span class="account-detail-value">+1 234 567 8900</span>
+            </div>
+
+            <div class="account-page-actions">
+                <a href="index.html" class="account-page-btn primary">Continue Shopping</a>
+                <button type="button" class="account-page-btn secondary" id="account-page-logout">Logout</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="JS/Account.js"></script>
+
+</body>
+
+</html>

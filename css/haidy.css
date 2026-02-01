@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.haidy {
+    margin-top: 50px;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.haidy .testimonial {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    padding: 40px;
+}
+
+
+.haidy .testimonial h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.haidy .testimonial h4 {
+    font-weight: lighter;
+}
+
+.haidy .card {
+    border: 2px solid #eee;
+    padding: 32px;
+    text-align: center;
+}
+
+.haidy .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.haidy .card h3 {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.haidy .card h4 {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.haidy .card i {
+    color: hsl(353, 100%, 78%);
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.haidy .card p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* summer offer */
+.haidy .summer-offer {
+    position: relative;
+    height:300px ;
+}
+
+.haidy .summer-offer img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.haidy .offer-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.haidy .discount {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.haidy .offer-content h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.haidy .price {
+    font-size: 14px;
+    color: #777;
+}
+
+.haidy .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: hsl(353, 100%, 78%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* services */
+
+
+
+.haidy .services h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+
+
+.haidy .services ul {
+    list-style: none;
+    border: 2px solid #eee;
+    padding: 20px;
+    text-align: center;
+    height: 325px;
+}
+
+.haidy .services li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.haidy .services i {
+    color: hsl(353, 100%, 78%);
+    font-size: 20px;
+    margin-top: 8px;
+    transition: color 0.4s ease;
+}
+
+.haidy .services i:hover {
+    color: black;
+
+}
+
+.haidy .services p {
+    margin-top: 5px;
+
+}
+
+.haidy .services h4 {
+    font-size: 12px;
+    color: #787878;
+    font-weight: 600;
+}
+
+.haidy .services p {
+    font-size: 11px;
+    color: #777;
+}
+
+/* categories section */
+.haidy .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.haidy .cat {
+
+    padding: 10px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+.haidy .cat img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.haidy .categories .cat .cat-a {
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #ff8f9c;
+    margin-top: 3px;
+
+}
+
+.haidy .categories .cat .cat-b {
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.haidy .categories .cat .cat-b:hover {
+    color: #ff8f9c;
+}
+
+.haidy .categories .cat p {
+    color: #787878;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* brand-directory */
+.foot .brand-directory {
+    background: #222;
+    color: #aaa;
+    padding: 40px;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: #555 solid 1px;
+}
+
+.foot .brand-directory h3 {
+    color: hsl(353, 100%, 78%);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.foot .brand-directory .title {
+    font-size: 10px;
+}
+
+.foot .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+    flex-wrap: nowrap;
+
+}
+
+.foot .row .title {
+    color: #ddd;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.foot .row p {
+    color: #888;
+    width: 80%;
+}
+
+.foot .row p a {
+    color: #888;
+    text-decoration: none;
+    margin-right: 5px;
+    transition: color 0.3s;
+}
+
+.foot .row p a:hover {
+    color: #fff;
+
+}
+
+/* footer */
+.foot .footer {
+    background: #1c1c1c;
+    color: #787878;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+    border-bottom: #555 solid 1px;
+}
+
+.foot .footer-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 30px;
+}
+
+.foot .footer-col h4 {
+    color: #fff;
+    font-size: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.foot .footer-col h4::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #ff8f9c;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.foot .footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot .footer-col ul li {
+    font-size: 13px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.foot .footer-col ul li:hover {
+    color: hsl(353, 100%, 78%);
+}
+
+
+.foot .contact li {
+    cursor: pointer;
+}
+
+
+/* payment */
+.foot .payment {
+    border-top: #555 solid 1px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.foot .payment img {
+    max-width: 300px;
+
+    width: 100%;
+
+}
+
+.foot .payment p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+

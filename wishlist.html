@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist | EcoStore</title>
+    <link rel="stylesheet" href="css/wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/Account.css">
+</head>
+<body>
+
+    <header class="account-page-header">
+        <div class="account-page-header-inner">
+            <a href="index.html" class="account-page-logo">
+                <img src="./images/logo/logo.svg" alt="Logo">
+            </a>
+            <a href="index.html" class="account-page-back">
+                <i class="fa-solid fa-arrow-left"></i> Back to Shop
+            </a>
+        </div>
+    </header>
+
+    <main class="wishlist-page">
+        <div class="container">
+            <header class="page-header">
+                <h1>My Wishlist <span id="wishlist-count">0</span></h1>
+                <p>Keep track of the items you love.</p>
+            </header>
+
+            <div id="wishlist-grid" class="wishlist-grid">
+                <div class="skeleton-container">Loading your favorites...</div>
+            </div>
+
+            <div id="empty-state" class="empty-state hidden">
+                <i class="fa-regular fa-heart"></i>
+                <h2>Your wishlist is empty</h2>
+                <p>Looks like you haven't added anything yet.</p>
+                <a href="index.html" class="btn-primary">
+                    <i class="fa-solid fa-arrow-left"></i> Browse Products</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        const usre = JSON.parse(localStorage.getItem("currentUser"));
+        if (!usre) {
+            window.location.href = "auth.html";
+        }
+    </script>
+    <script src="JS/wishlist.js"></script>
+</body>
+</html>

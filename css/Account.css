@@ -1,0 +1,122 @@
+.account-page-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.account-page-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account-page-logo img {
+  height: 28px;
+  display: block;
+}
+.account-page-back {
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.account-page-back:hover {
+  color: #ff6f81;
+}
+.account-page-main {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+.account-page-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.img-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.img-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+}
+.account-page-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 24px;
+}
+.account-detail-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+.account-detail-label {
+  font-size: 18px;
+  font-weight: 800;
+  color: #222;
+}
+.account-detail-value {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #777;
+}
+.account-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+.account-section-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 12px;
+}
+.account-page-actions {
+  margin-top: 28px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.account-page-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.account-page-btn.primary {
+  background: #ff6f81;
+  color: #fff;
+}
+.account-page-btn.primary:hover {
+  background: #ff4f64;
+}
+.account-page-btn.secondary {
+  background: #f3f4f6;
+  color: #333;
+}
+.account-page-btn.secondary:hover {
+  background: #e5e7eb;
+}
+.account-link {
+  text-decoration: none;
+  display: block;
+}
