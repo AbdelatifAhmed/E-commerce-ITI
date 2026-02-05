@@ -1,5 +1,5 @@
 ## Basic HTML , CSS , and JavaScript Project E-commerce 
-##Featires : 
+#Features : 
 - Very powerfull Home Page
 - Login/Register ( using local storage to set users )
 - products (from Fake store API ) -just in the product section 
