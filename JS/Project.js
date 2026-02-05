@@ -19,6 +19,7 @@ menuItems.forEach(item => {
     if (!mega) return;
 
     item.addEventListener("mouseenter", () => {
+        updateMenuPosition();
         closeAll();
         item.classList.add("open");
         mega.style.display = "block";

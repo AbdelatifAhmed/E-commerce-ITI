@@ -6,12 +6,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    /* background-image: url('../images/login (2).jpg');
-    background-repeat: no-repeat;
-    background-size: cover; */
-    background: linear-gradient(135deg, hsl(353, 89%, 62%), #ff9fb3);
-
 }
+   
+ 
+ 
+
 
 .auth-container {
     background: #fff;

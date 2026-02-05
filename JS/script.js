@@ -43,13 +43,12 @@ closeButton.addEventListener('click', () => {
 
 
 // ----------------------------------------
-const xhr = new XMLHttpRequest();
-const url = 'https://fakestoreapi.com/products';
-xhr.open('GET', url);
-xhr.send();
 
-xhr.onload = function () {
-    const products = JSON.parse(xhr.responseText);
+
+window.onload = async function () {
+    const data = await fetch('https://fakestoreapi.com/products');
+    const products = await data.json();
+    
     const wrapper = document.querySelector('.products-wrapper');
     
     let currentUser = JSON.parse(localStorage.getItem('currentUser'));

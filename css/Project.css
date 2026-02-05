@@ -349,6 +349,7 @@
   background:#f3f4f6;
   border-color:#d1d5db;
 }
+
 .cart-qty-value{
   min-width:18px;
   text-align:center;
@@ -729,9 +730,7 @@
   text-decoration: underline;
 }
 
-/* =========================
-   PAYMENT MODAL (fake payment API)
-========================= */
+
 .payment-modal-overlay {
   display: none;
   position: fixed;
